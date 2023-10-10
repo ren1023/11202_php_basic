@@ -28,27 +28,25 @@ for($i=1;$i<=9;$i++){
     // echo $i."x".$j ."=".$x;
     // echo "<br>";
 }
-
-
 ?>
 </table>
 
 <hr>
 
 
-<table>
+<table style='border: 1px solid black; '>
 <?php
 // 99乘法，表格二
 
-// 列出表頭
+// 新增列表頭標籤
 for ($i = 0; $i <= 9; $i++) {
     echo "<th style='border: 1px solid black; padding: 5px;font-family:Arial;'>{$i}</th>";
 }
 // 生成乘法表格
 for($i=1;$i<=9;$i++){
 
-    echo "<tr>";
-    echo "<th style='border: 1px solid black; padding: 5px;font-family:Arial;'>{$i}</th>";
+    echo "<tr>"; //新增 列的標籤
+    echo "<th style='border: 1px solid black; padding: 5px;font-family:Arial;'>{$i}</th>";//新增欄表頭
     
     for($j=1;$j<=9;$j++){
 
