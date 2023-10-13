@@ -1,6 +1,6 @@
 <h3>以表格排列的九九乘法表</h3>
 
-<!-- // 99乘法，表格二 -->
+<!-- // 99 乘法，表格二 -->
 
 <table style="border: 1px solid black; color: black;">
 
@@ -15,7 +15,7 @@ for($i=1;$i<=9;$i++){
 
      $result = $i*$j;
    
-     echo "<td style='border: 1px solid black; padding: 5px;font-family:Arial;'>{$i}x{$j}={$result}</td>";
+     echo "<td style='border: 1px solid black; padding: 5px;font-family:Arial;'>{$i}*{$j}&nbsp=&nbsp{$result}</td>";
 
 
     //  echo $i."x".$j ."=".$result;
@@ -36,7 +36,7 @@ for($i=1;$i<=9;$i++){
 
 <table style='border: 1px solid black; '>
 <?php
-// 99乘法，表格二
+// 99 乘法，表格二
 
 // 新增列表頭標籤
 for ($i = 0; $i <= 9; $i++) {
