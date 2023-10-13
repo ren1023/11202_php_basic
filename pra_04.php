@@ -7,7 +7,7 @@ echo "*****<br>";
 echo "******<br>";
 echo "<hr>";
 
-$amount=10;
+$amount=7;
 echo "<h2>直角三角形</h2>";
 for ($i=0;$i<$amount;$i++){
     for($j=0;$j<=$i;$j++){
