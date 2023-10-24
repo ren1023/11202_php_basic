@@ -21,13 +21,13 @@
 <body>
 <?php 
 echo "<h3>";
-echo date("西元Y年m月");
+echo date("西元Y年9月");
 echo "</h3>";
 $thisMonth=date("Y");
-$thisFirstDay=date("Y-m-1");
+$thisFirstDay=date("Y-9-1");
 $thisFirstDate=date('w',strtotime($thisFirstDay));
 $thisMonthDays=date("t");
-$thisLastDay=date("Y-m-$thisMonthDays");
+$thisLastDay=date("Y-9-$thisMonthDays");
 $weeks=ceil(($thisMonthDays+$thisFirstDate)/7);
 $firstCell=date("Y-m-d",strtotime("-$thisFirstDate days",strtotime($thisFirstDay)));
 echo "<table>";
