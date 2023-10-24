@@ -8,7 +8,7 @@ echo "******<br>";
 echo "<hr>";
 
 $amount=7;
-echo "<h2>直角三角形</h2>";
+echo "<h2>1.直角三角形</h2>";
 for ($i=0;$i<$amount;$i++){
     for($j=0;$j<=$i;$j++){
         echo "*";
@@ -19,7 +19,7 @@ for ($i=0;$i<$amount;$i++){
 <hr>
 
 
-<h2>倒直角三角形</h2>
+<h2>2.倒直角三角形</h2>
 <?php
 // 倒直角三角形
 for ($i=$amount-1;$i>=0;$i--){
@@ -38,7 +38,7 @@ for ($i=$amount-1;$i>=0;$i--){
 </style>
 
 
-<h2>正三角形</h2>
+<h2>3.正三角形</h2>
 <?php
 for ($i=0;$i<$amount;$i++){
         
@@ -55,7 +55,7 @@ for ($i=0;$i<$amount;$i++){
 <hr>
 
 
-<h2>倒正三角形</h2>
+<h2>4.倒正三角形</h2>
 <?php
 for ($i=$amount-1;$i>=0;$i--){
     for($j=0;$j<($amount-$i);$j++){
@@ -70,7 +70,7 @@ for ($i=$amount-1;$i>=0;$i--){
 <hr>
 
 
-<h2>菱形</h2>
+<h2>5.菱形</h2>
 <?php
 $mid=floor(($amount*2-1)/2);
 for($i=0;$i<($amount*2)-1;$i++){
@@ -92,7 +92,7 @@ for($i=0;$i<($amount*2)-1;$i++){
 ?>
 <hr>
 
-<h2>矩形</h2>
+<h2>6.矩形</h2>
 <?php
 
 for ($i=0;$i<$amount;$i++){
@@ -111,7 +111,7 @@ for ($i=0;$i<$amount;$i++){
 ?>
 <hr>
 
-<h2>矩形+對角線</h2>
+<h2>7.矩形+對角線</h2>
 <?php
 
 for ($i=0;$i<$amount;$i++){
@@ -131,7 +131,7 @@ for ($i=0;$i<$amount;$i++){
 }
 ?>
 <hr>
-<h2>矩形+對角線+改星星為紅色</h2>
+<h2>8.矩形+對角線+改星星為紅色</h2>
 <?php
 
 for ($i=0;$i<$amount;$i++){
