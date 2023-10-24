@@ -39,7 +39,7 @@ print_r($a);
 
 <?php
 
-echo join(" ",$a);
+echo join(" ",$a);// 使用空格連接數組中的元素並輸出結果
 
 ?>
 
@@ -74,11 +74,13 @@ echo "...";
 $bb="學會 PHP 網頁程式設計，薪水會加倍，工作會好找";
 $c='程式設計';
 
-echo mb_substr($bb,(mb_strpos($bb,$c)),4);
+echo mb_substr($bb,(mb_strpos($bb,$c)),4);// 1. 顯示從字符串中提取的 4 個字符
 
-echo "<div style='font-size:20px;color:red'>".mb_substr($bb,(mb_strpos($bb,$c)),4)."</div>";
+echo "<div style='font-size:20px;color:red'>".mb_substr($bb,(mb_strpos($bb,$c)),4)."</div>";// 2. 以紅色 20px 字體大小顯示從字符串中提取的 4 個字符
 
-echo str_replace($c, ("<a style='font-size:20px;color:red'>".mb_substr($bb,(mb_strpos($bb,$c)),4)."</a>"),$bb);
+
+echo str_replace($c, ("<span style='font-size:20px;color:red'>".mb_substr($bb,(mb_strpos($bb,$c)),4)."</span>"),$bb);// 3. 用紅色 20px 字體大小替換子字符串並顯示結果
+
 
 
 
