@@ -21,9 +21,22 @@ echo $date1." 到 ".$date2 ." 有 ".$days." 天 ";
 <h2>計算距離自己下一次生日還有幾天</h2>
 <?php
 $date="1974-10-7";
-$today= date("Y-m-d");
+$bday=strtotime($date);//將生日轉換成秒的格式，以便計算。
+$bdayoftheday=strtotime(date('Y')."-".date('m-d',$bday));//今年的生日日期=2023-10-07
+$today=strtotime('now');
 
-homework！
+
+if($bdayoftheday>$today){//今年的生日大於今天
+    $dayofdiff=($bdayoftheday-$today)/(60*60*24);//今天-今年的生日
+}else{
+    $bdayoftheday=strtotime('+1 year',$bdayoftheday);//今年的生日小於今天，則今年的生日加1年。
+    $dayofdiff=($bdayoftheday-$today)/(60*60*24);
+
+}
+
+echo "距離下一次生日:".date('Y-m-d',$bdayoftheday)."還有". floor($dayofdiff)."天";
+
+
 
 
 
