@@ -90,8 +90,8 @@
 
         </header>
         <?php
-$year=2023;
-$month=9;
+$year=date("Y");
+$month=date("m");
 echo "<h3>";
 echo "西元".$year."年 ".$month."月";
 echo "</h3>";
